@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    height: 20%;
+    padding: 2%;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(25, 25, 25, 0.8);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.info {
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(225,225,225,0.8);
+    border-radius: 5px;
+    width: 320px;
+}
+
+img {
+    height: 300px;
+}
+
+p {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 2%;
+    height: 20%;
+    padding: 2%;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(25, 25, 25, 0.8);
+}
+
+.type {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}

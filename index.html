@@ -1,12 +1,66 @@
 <html>
-    <head>
-        <title>Hi</title>
-    </head>
 
-    <body>
-<<<<<<< HEAD
-        <p>Hi vyom</p>
-        <p> nitya here hello</p>
-        <p>H</p>
-    </body>
+<head>
+    <title>Project</title>
+
+    <!--The following three lines are for importing the Bootstrap library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--The next line include the index.css and index.js files-->
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <script src="assets/javascript/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <hgroup>
+            <h1>Meet our developers</h1>
+        </hgroup>
+    </header>
+
+
+    <section class="container text-center">
+        <article class="col-md-6 col-sm-12">
+            <center>
+                <div class="info">
+                    <img src="assets/images/nitya.jpeg" />
+                    <p>Name: <strong>Nitya Jaiswal</strong></p>
+                    <p class="type">"She's my favourite person"</p>
+                </div>
+            </center>
+        </article>
+        <article class="col-md-6 col-sm-12">
+            <center>
+                <div class="info">
+                    <img src="assets/images/wraith_of_peril.jpg" />
+                    <p>Name: <strong>Vyom Maitreya</strong></p>
+                    <p class="type">"He's my inspiration"</p>
+                </div>
+            </center>
+        </article>
+    </section>
+
+    <footer>
+        <h1>They are the best people ever</h1>
+    </footer>
+
+    <script type="text/javascript">
+        var e1 = document.getElementsByClassName('type')[0];
+        var e2 = document.getElementsByClassName('type')[1];
+
+        e1.addEventListener("animationend", function() {
+            e1.style.animation = "none";
+            e1.style.border = "none";
+        }, false);
+
+        e2.addEventListener("animationend", function() {
+            e2.style.animation = "none";
+            e2.style.border = "none";
+        }, false);
+
+    </script>
+</body>
+
 </html>
