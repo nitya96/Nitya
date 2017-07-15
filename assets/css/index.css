@@ -27,7 +27,7 @@ h1 {
     padding: 10px;
     margin-top: 5%;
     margin-bottom: 5%;
-    background-color: rgba(225,225,225,0.8);
+    background-color: rgba(225, 225, 225, 0.8);
     border-radius: 5px;
     width: 320px;
 }
@@ -42,6 +42,28 @@ p {
     font-size: 20px;
 }
 
+.fb {
+    font-size: 24px;
+    color: #3b5998;
+    transition: font-size 0.06s linear;
+}
+
+.fb:hover {
+    font-size: 40px;
+}
+
+.insta {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    border-radius: 20%;
+    font-size: 24px;
+    transition: font-size 0.06s linear;
+}
+
+.insta:hover {
+    font-size: 40px;
+}
+
 footer {
     margin-top: 2%;
     height: 20%;
@@ -52,23 +74,38 @@ footer {
 }
 
 .type {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
+
 
 /* The typing effect */
+
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
 }
 
+
 /* The typewriter cursor effect */
+
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
 }
