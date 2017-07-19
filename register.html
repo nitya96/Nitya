@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
+
 <head>
-   <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- jQuery library -->
@@ -10,58 +11,73 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/register.css" />
-<title> HOME PAGE </title>
-<style>
-    body{
-        padding:5px;
-        font-family: Verdana, sans-serif;
-            font-size: 0.9em;
-    }
-table ,th {
-border: 2px solid black;
-border-collapse:collapse;
-}
-th{
-padding:10px;
-text-align:left;
-}
-</style>
+    <title>Register</title>
 </head>
-    <body>
 
-<table style="width:100%">
-<tr>
-<th> <a href="http://www.google.com"> Home </a> </th>
-<th> <a href="http://www.google.com"> About us </a> </th>
-<th> <a href="http://www.google.com"> contact us </a> </th>
-<th> <a href="http://www.google.com"> Courses </a> </th>
-</tr>
-</table>
+<body>
 
-<form>
-  First name:
-  <input type="text" name="firstname">
-<br><br>
-  Last name:
-<input type="text" name="lastname"> <br><br>
-User name:
- <input type="text" name="username">
-<br><br>
- User password:
-<input type="password" name="psw"> <br><br>
-Gender :
-<input type="radio" name="gender" value="male" checked /> Male
-<input type="radio" name="gender" value="female" /> Female
-<input type="radio" name="gender" value="other" /> Other <br> <br>
-Birthday:
-  <input type="date" name="bday"> <br> <br>
- E-mail:
-  <input type="email" name="email"> <br><br>
-Contact Number :
-<input type="number" name="quantity" min="0" max="9"> <br> <br>
-<input type="submit" value="Submit">
-<input type="reset">
-<marquee> Register Yourself </marquee>
-</form>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php" id="brand">NITYA</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" id="list">
+                    <li class="active"><a href="register.html">Register</a></li>
+                    <li><a href="mypage.html">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Courses</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container">
+        <article class="col-xs-12 col-md-offset-4 col-md-4">
+            <form action="register.php">
+
+                <div class="form-group">
+                    <input type="text" name="firstname" placeholder="First Name" class="form-control input-md" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="lastname" placeholder="Last Name" class="form-control input-md" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="username" placeholder="Username" class="form-control input-md">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="psw" placeholder="Password" class="form-control input-md">
+                </div>
+                <label for="radio">
+                    Gender :
+                </label>
+                <div class="form-group" id="radio">
+                    <input type="radio" name="gender" value="male" />Male&nbsp;
+                    <input type="radio" name="gender" value="female" />Female&nbsp;
+                    <input type="radio" name="gender" value="other" checked />Other
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">Birthday</span>
+                        <input type="date" name="bday" class="form-control input-md" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="E-mail" class="form-control input-md" />
+                </div>
+                <div class="form-group">
+                    <input type="number" name="quantity" min="0" max="9" placeholder="Number" class="form-control input-md" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                    <input type="reset" class="btn btn-danger">
+                </div>
+                <marquee> Register Yourself </marquee>
+            </form>
+        </article>
+    </section>
 </body>
+
 </html>
